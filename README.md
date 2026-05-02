@@ -49,19 +49,33 @@ python manage.py runserver
 ## Основные эндпоинты API
 
 POST /auth/users/ - Регистрация пользователя
+
 POST /auth/jwt/create/ - Получение JWT-токена
+
 GET /cats/ - Список всех котиков
+
 POST /cats/ - Добавить котика (требуется токен)
+
 GET /cats/{id}/ - Получить котика по ID
+
 PATCH /cats/{id}/ - Изменить котика (только владелец)
+
 DELETE /cats/{id}/ - Удалить котика (только владелец)
+
 GET /achievements/ - Список достижений
+
 GET /api/travel/routes/ - Список маршрутов путешествий
+
 POST /api/travel/routes/ - Создать маршрут (требуется токен)
+
 GET /api/travel/routes/{id}/ - Получить маршрут по ID
+
 PATCH /api/travel/routes/{id}/ - Изменить маршрут (только владелец)
+
 DELETE /api/travel/routes/{id}/ - Удалить маршрут (только владелец)
+
 POST /api/travel/routes/{id}/join/ - Присоединиться к маршруту (требуется токен)
+
 POST /api/travel/routes/{id}/leave/ - Отменить участие в маршруте (требуется токен)
 
 ## Примеры запросов
